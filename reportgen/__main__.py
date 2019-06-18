@@ -116,7 +116,7 @@ def generate_report(completed_section, planned_section, blocked_section):
 
     if report_template:
         formalized_template = string.Template(report_template)
-        baseline_template = formalized_template.substitute(report_name='DenDeli Weekly Report', report_description='Produced on: **' + str(datetime.now().date()) + "**") + '\n\n'
+        baseline_template = formalized_template.substitute(report_name='Weekly Progress Report', report_description='Produced on: **' + str(datetime.now().date()) + "**") + '\n\n'
 
         baseline_template += completed_section + '\n\n'
         baseline_template += blocked_section + '\n\n'
